@@ -7,6 +7,8 @@ import { IoVideocamOutline } from "react-icons/io5";
 import { MdOutlinePhotoCamera } from "react-icons/md";
 import useScrollTo from "../hooks/useScrollTo";
 
+import PropTypes from "prop-types";
+
 function SkillCard({ color, icon, title, description }) {
   return (
     <div
@@ -24,7 +26,7 @@ function SkillCard({ color, icon, title, description }) {
 }
 
 const Skills = () => {
-  const { handleScroll, isOpen, setIsOpen } = useScrollTo();
+  const { handleScroll } = useScrollTo();
   return (
     <>
       <div
@@ -91,6 +93,13 @@ const Skills = () => {
       </div>
     </>
   );
+};
+
+SkillCard.propTypes = {
+  color: PropTypes.string.isRequired,
+  icon: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default Skills;

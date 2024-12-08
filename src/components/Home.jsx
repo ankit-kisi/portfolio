@@ -32,7 +32,7 @@ function Home() {
               👋, MY NAME IS SANDHYA
             </h1>
             <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight mb-6 md:mb-8">
-              I'm a <span>{text}</span>
+              I&apos;m a <span>{text}</span>
               <span>
                 <Cursor />
               </span>
@@ -44,7 +44,7 @@ function Home() {
               className="btn-primary"
               onClick={() => handleScroll("contact")}
             >
-              LET'S START
+              LET&apos;S START
             </button>
           </div>
 

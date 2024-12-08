@@ -1,7 +1,8 @@
 import Modal from "./Modal";
 import ViewProject from "./ViewProject";
+import PropTypes from "prop-types";
 
-export default function ProjectCard({ project }) {
+function ProjectCard({ project }) {
   return (
     <div className="grid grid-cols-12 gap-3 mb-5 pb-12 lg:pb-3 lg:mb-3 items-center">
       {/* Left Image Section */}
@@ -49,3 +50,15 @@ export default function ProjectCard({ project }) {
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    skill: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default ProjectCard;

@@ -4,7 +4,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 
