@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html,
+body {
+  overscroll-behavior-y: none;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .btn-primary {
+    @apply bg-orange text-white px-6 py-3 rounded hover:bg-black transition-colors shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-blue text-black px-6 py-3 rounded hover:bg-white transition-colors shadow-xl;
+  }
+
+  .card {
+    @apply p-6 rounded shadow text-white;
+  }
+}
+
+/* globals.css or tailwind.css */
+@layer base {
+  body {
+    line-height: 2; /* Custom line height for entire project */
+    letter-spacing: 1px; /* Custom letter spacing for entire project */
+    font-family: "Jost";
+  }
+}
