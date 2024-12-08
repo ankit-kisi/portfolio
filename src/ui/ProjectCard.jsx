@@ -37,9 +37,7 @@ export default function ProjectCard({ project }) {
           <div className="btn-bar">
             <Modal>
               <Modal.Open opens="project">
-                <button className="px-6 py-3 bg-orange-500 text-white font-medium rounded-lg shadow-lg hover:bg-orange-600">
-                  View Project
-                </button>
+                <button className="btn-secondary">View Project</button>
               </Modal.Open>
               <Modal.Window name="project">
                 <ViewProject />

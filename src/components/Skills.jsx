@@ -9,11 +9,15 @@ import useScrollTo from "../hooks/useScrollTo";
 
 function SkillCard({ color, icon, title, description }) {
   return (
-    <div className={`flex items-center p-6 m-4 h-4/5 shadow-lg ${color} `}>
-      <span>{icon}</span>
-      <div>
+    <div
+      className={`flex flex-col items-center p-6 m-4 h-4/5 shadow-lg ${color} `}
+    >
+      <div className="flex items-center justify-between pb-5">
+        <span>{icon}</span>
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm">{description}</p>
+      </div>
+      <div>
+        <p className="text-sm mb-6">{description}</p>
       </div>
     </div>
   );

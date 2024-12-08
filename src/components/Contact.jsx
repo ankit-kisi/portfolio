@@ -36,20 +36,20 @@ function Contact() {
   };
 
   return (
-    <section className="flex justify-center items-center min-h-screen bg-rose py-20">
+    <section className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-r from-rose to-softWhite py-24">
+      <h2 className="text-4xl text-center md:text-5xl lg:text-6xl pb-8 font-semibold">
+        CONTACT
+      </h2>
       <form
         onSubmit={onSubmit}
-        className="w-full bg-white max-w-2xl px-6 py-5 rounded-lg shadow-lg m-6"
+        className="w-full bg-white max-w-2xl px-6 py-5  shadow-lg m-6"
       >
-        <h2 className="text-4xl text-center md:text-5xl lg:text-6xl font-semibold">
-          CONTACT
-        </h2>
         <div className="mt-5">
           <label>Full Name</label>
           <input
             type="text"
             name="name"
-            className="w-full h-12 bg-transparent border-2 border-solid border-gray-300 rounded-md p-4 mt-2 text-base text-slate-900"
+            className="w-full h-12 bg-transparent border-2 border-solid border-gray-300  p-4 mt-2 text-base text-slate-900"
             placeholder="Enter your full name"
             required
           />
@@ -59,7 +59,7 @@ function Contact() {
           <input
             type="email"
             name="email"
-            className="w-full h-12 bg-transparent border-2 border-solid border-gray-300 rounded-md p-4 mt-2 text-base text-slate-900"
+            className="w-full h-12 bg-transparent border-2 border-solid border-gray-300  p-4 mt-2 text-base text-slate-900"
             placeholder="Enter your email address"
             required
           />
@@ -68,14 +68,14 @@ function Contact() {
           <label>Your Message</label>
           <textarea
             name="message"
-            className="w-full bg-transparent border-2 border-solid border-gray-300 rounded-md p-4 mt-2 text-base text-slate-900 h-52 resize-none"
+            className="w-full bg-transparent border-2 border-solid border-gray-300  p-4 mt-2 text-base text-slate-900 h-52 resize-none"
             placeholder="Enter your message"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="w-full h-14 rounded-md bg-pink shadow-lg cursor-pointer text-base font-semibold text-slate-50 mt-6"
+          className="w-full h-14  bg-pink shadow-lg cursor-pointer text-base font-semibold text-slate-50 mt-6"
         >
           Send Message
         </button>

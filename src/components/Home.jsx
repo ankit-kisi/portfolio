@@ -31,14 +31,14 @@ function Home() {
             <h1 className="text-sm font-semibold md:text-lg mb-5 md:mb-7">
               👋, MY NAME IS SANDHYA
             </h1>
-            <h2 className="text-2xl md:text-4xl lg:text-7xl font-bold leading-tight mb-6 md:mb-8">
+            <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight mb-6 md:mb-8">
               I'm a <span>{text}</span>
               <span>
                 <Cursor />
               </span>
             </h2>
             <p className="text-gray-600 text-sm md:text-xl mb-2 md:mb-4">
-              Based in Bhaktapur.
+              Based in Bhaktapur, Nepal.
             </p>
             <button
               className="btn-primary"

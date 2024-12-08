@@ -11,7 +11,7 @@ const ViewProject = () => {
         <div className="bg-white p-6 rounded shadow-lg">
           <img
             src="/path-to-image.png"
-            alt="UX Agency Landing Page"
+            alt="IDP image"
             className="w-full h-auto rounded"
           />
           <ul className="mt-4 text-gray-600 space-y-2">
