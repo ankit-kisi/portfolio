@@ -102,33 +102,34 @@ function Navbar() {
             <li>
               <button
                 onClick={() => handleScroll("home")}
-                className="hover:text-blue-500"
+                className="hover:text-orange hover:underline hover:underline-offset-8"
               >
                 HOME
               </button>
             </li>
             <li>
               <button
-                onClick={() => handleScroll("brands")}
-                className="hover:text-blue-500"
-              >
-                BRANDS
-              </button>
-            </li>
-            <li>
-              <button
                 onClick={() => handleScroll("about")}
-                className="hover:text-blue-500"
+                className="hover:text-orange hover:underline hover:underline-offset-8"
               >
                 ABOUT
               </button>
             </li>
+
             <li>
               <button
                 onClick={() => handleScroll("skills")}
-                className="hover:text-blue-500"
+                className="hover:text-orange hover:underline hover:underline-offset-8"
               >
                 SKILLS
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleScroll("portfolio")}
+                className="hover:text-orange hover:underline hover:underline-offset-8"
+              >
+                PORTFOLIO
               </button>
             </li>
             <li>
@@ -136,7 +137,7 @@ function Navbar() {
                 onClick={() => {
                   handleScroll("contact");
                 }}
-                className="hover:text-blue-500"
+                className="hover:text-orange hover:underline hover:underline-offset-8"
               >
                 CONTACT
               </button>
